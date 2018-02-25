@@ -1,27 +1,34 @@
-# XDesignSystems
+# xDesignSystems
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
+This project is for collecting library items for ×CRM-Alpha
 
-## Development server
+## TO DID
+### Structure Replication 
+#### Metronic-Angilar/ -> xDesignSystems/
+* src/js -> src/includes/js
+* src/sass -> src/includes/scss
+* src/vendors -> src/includes/vendors
+* src/media -> src/assets/media
+### Compare package.json
+* Copied extra package references as it is from Metronic-Angular/dist/demo/default/package.json to xDesignSystems/package.json
+* Renamed package-lock.json to package-lock.old.json
+* npm installed again. That installed Metronic related packages and created new package.lock.json
+* package.lock.json has some versions discrepencies 
+### Compare and Configure angular-cli.json
+* Both files almost same with exceptioon of inlineTemplate and inlineStyle set to true in Metronic-Angular/dist/demo/default/.
+* Need to add js and scss in angular-cli.json
+### Exclude demo files except default
+* Keeping all src files for now - In order to manually include each demo related file as needed.
+* 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## To DO
+- [x] Strcuture Replication
+- [x] Compare package.json
+- [x] Compare and Configure angular-cli.json
+- [x] Add scripts and js angular-cli.json
+- [ ] Exclude demo files except default
+- [ ] Create modules and routes
+- [ ] Copy demo-specific scss in respective modules and components
+- [ ] See if /vendors can be installed and included via npm install and moved into node_modules
+- [ ] Relink to media files - if needed
