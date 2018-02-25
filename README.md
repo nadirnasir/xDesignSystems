@@ -9,6 +9,7 @@ This project is for collecting library items for ×CRM-Alpha
 * src/sass -> src/includes/scss
 * src/vendors -> src/includes/vendors
 * src/media -> src/assets/media
+* Copied from original metronic repo. Removed locally copied files.
 ### Compare package.json
 * Copied extra package references as it is from Metronic-Angular/dist/demo/default/package.json to xDesignSystems/package.json
 * Renamed package-lock.json to package-lock.old.json
@@ -27,6 +28,7 @@ This project is for collecting library items for ×CRM-Alpha
 - [x] Compare package.json
 - [x] Compare and Configure angular-cli.json
 - [x] Add scripts and js angular-cli.json
+- [x] Copy sources from original metronic repo instead of local Learning/Metronic-Angular/...
 - [ ] Exclude demo files except default
 - [ ] Create modules and routes
 - [ ] Copy demo-specific scss in respective modules and components
